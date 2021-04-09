@@ -1,0 +1,122 @@
+@charset "utf-8";
+
+/*
+        ITSE 1301 Web Design Tools
+        Final Project
+          
+        Live True Home Page
+        Author: Morinne Kearns
+        Date: 3/17/21  
+      
+        Filename: lt_designs.css
+*/
+
+/* =============================================
+	Base styles used by All Screens
+   =============================================
+*/
+
+/* HTML and Body Styles*/
+
+html {
+	background-color: #489FAB;
+	font-size: 12px;
+	font-family: Tahoma, Geneva, sans-serif;
+}
+
+body {
+	background-color: White;
+	box-shadow: 15px 0px 30px rgb(33,48,77),
+				-15px 0px 30px rgb(33,48,77);
+	max-width: 1024px;
+	margin: 0px auto;
+
+}
+
+header, footer {
+	width: 100%;
+}
+
+/* Header Styles */
+header {
+	box-shadow: 15px 0px 30px rgb(33,48,77),
+				-15px 0px 30px rgb(33,48,77);
+	margin-bottom: 5px;
+
+}
+header > img {
+	display: block;
+	margin: 0px auto;	
+}
+
+/* Body Styles*/
+h1 {
+	font-size: 2.2em;
+	text-align: center;
+	padding: 40px 0px;
+}
+h2 {
+	font-size: 1.5em;
+	text-align: center;
+	padding: 20px 0px;
+}
+video {
+	display: block;
+	box-shadow: 5px 0px 10px rgb(33,48,77),
+				-5px 0px 10px rgb(33,48,77);
+	border: 2px solid black;
+	width: 700px;
+	margin: 30px auto 50px auto;
+}
+section {
+	background-color: #D3EFF3;
+}
+
+/* Parallax Styles*/
+
+.brain2 {
+	display: block;
+	background-image: url("../images/Brain.png");
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size:40%;
+	min-height: 1000px;
+}
+.FandT {
+	display: block;
+	background-image: url("../images/FandT.png");
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 40%;
+	min-height: 1000px;
+}
+.HandL {
+	display: block;
+	background-image: url("../images/HandL.png");
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 40%;
+	min-height: 1000px;
+}
+.SandI{
+	display: block;
+	background-image: url("../images/SandI.png");
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 40%;
+	min-height: 1000px;
+}
+.transition {
+	min-height: 200px;
+	display: block;
+	max-height: 240px;
+	background-color: #4E88AE;
+	border-top: 3px solid black;
+	border-bottom: 3px solid black;
+	box-shadow: 5px 0px 10px rgb(33,48,77),
+				-5px 0px 10px rgb(33,48,77);
+}
