@@ -52,13 +52,20 @@ header > img {
 /* Body Styles*/
 h1 {
 	font-size: 2.2em;
+	line-height: 2.3em;
 	text-align: center;
-	padding: 40px 0px;
+	padding: 20px 0px 20px 0px;
 }
 h2 {
 	font-size: 1.5em;
 	text-align: center;
 	padding: 20px 0px;
+}
+h3 {
+	font-size: 1.3em;
+	text-align: center;
+	line-height: 1.4em;
+	padding: 10px;
 }
 video {
 	display: block;
@@ -69,54 +76,104 @@ video {
 	margin: 30px auto 50px auto;
 }
 section {
-	background-color: #D3EFF3;
+	display: -webkit-flex;
+    display: flex;
+	-webkit-flex-flow: column wrap;
+    flex-flow: column wrap;
+	width: 100%;
+	background-color: white;
+	padding: 10px 0px 10px 0px;
+	position: relative;
 }
-
+p {
+	font-size: 1.5em;
+	line-height: 1.6em;
+	padding: 10px;
+	text-align: center;
+}
 /* Parallax Styles*/
 
 .brain2 {
-	display: block;
-	background-image: url("../images/Brain.png");
+	padding-top: 50px;
+	padding-bottom: 50px;
+	background-image: url("../images/Brain3.png");
 	background-attachment: fixed;
 	background-position: center;
 	background-repeat: no-repeat;
-	background-size:40%;
+	background-size: 720px auto;
 	min-height: 1000px;
+	max-height: 1000px;
+	justify-content: center;
+	align-content: space-between;
 }
 .FandT {
-	display: block;
-	background-image: url("../images/FandT.png");
+	padding-top: 75px;
+	padding-bottom: 75px;
+	background-image: url("../images/FandT3.png");
 	background-attachment: fixed;
 	background-position: center;
 	background-repeat: no-repeat;
-	background-size: 40%;
+	background-size: 700px auto;
 	min-height: 1000px;
+	max-height: 1000px;
+	justify-content: center;
+	align-content: space-between;
 }
 .HandL {
-	display: block;
-	background-image: url("../images/HandL.png");
+	padding-top: 75px;
+	padding-bottom: 75px;
+	background-image: url("../images/HandL3.png");
 	background-attachment: fixed;
 	background-position: center;
 	background-repeat: no-repeat;
-	background-size: 40%;
+	background-size: 900px auto;
 	min-height: 1000px;
+	max-height: 1000px;
+	justify-content: center;
+	align-content: space-between;
 }
 .SandI{
-	display: block;
-	background-image: url("../images/SandI.png");
+	padding-top: 75px;
+	padding-bottom: 75px;
+	background-image: url("../images/SandI3.png");
 	background-attachment: fixed;
 	background-position: center;
 	background-repeat: no-repeat;
-	background-size: 40%;
+	background-size: 750px auto;
 	min-height: 1000px;
+	max-height: 1000px;
+	justify-content: center;
+	align-content: space-between;
 }
 .transition {
 	min-height: 200px;
-	display: block;
+    display: -webkit-flex;
+    display: flex;
 	max-height: 240px;
-	background-color: #4E88AE;
+	background: radial-gradient(#489FAB, #4E88AE);
 	border-top: 3px solid black;
 	border-bottom: 3px solid black;
 	box-shadow: 5px 0px 10px rgb(33,48,77),
 				-5px 0px 10px rgb(33,48,77);
 }
+
+/* infoBox Styles */
+
+.infoBox {
+
+	width: 22%;
+	margin: 50px 30px;
+	border: 3px solid #4E88AE;
+	border-radius: 5px;
+	background: radial-gradient(#489FAB 50%, #4E88AE);
+	box-shadow: 5px 0px 10px rgb(33,48,77),
+				-5px 0px 10px rgb(33,48,77);
+}
+
+
+/* Flex Layout Styles */
+body {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
