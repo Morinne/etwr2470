@@ -6,9 +6,9 @@
           
         Live True Home Page
         Author: Morinne Kearns
-        Date: 3/17/21  
+        Date: 4/30/21  
       
-        Filename: lt_designs.css
+        Filename: lt_designs_vagus.css
 */
 
 /* =============================================
@@ -67,12 +67,10 @@ h3 {
 	line-height: 1.4em;
 	padding: 10px;
 }
-video {
-	display: block;
+iframe {
 	box-shadow: 5px 0px 10px rgb(33,48,77),
 				-5px 0px 10px rgb(33,48,77);
 	border: 2px solid black;
-	width: 700px;
 	margin: 30px auto 50px auto;
 }
 section {
