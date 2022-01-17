@@ -1,0 +1,111 @@
+@charset "utf-8";
+
+/*
+   ITSE 1301 Web Design Tools
+   Final project
+   
+   Live True Layout CSS Sheet
+   Author:  Morinne Kearns 
+   Date: 5/13/21    
+   
+   Filename: kearnsmorinne_layout.css
+
+   This file contains the layout styles and media
+   queries used with all pages from the Live True website.
+
+*/
+
+
+/* Flex Layout Styles */
+body {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+
+}
+
+section#tagline {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+article {
+    -webkit-flex: 1 1 450px;
+    flex: 1 1 450px;  
+}
+aside {
+    -webkit-flex: 1 1 150px;
+    flex: 1 1 150px;   
+}
+
+/* ============================================
+	Mobile Devices: 0 - 480 pixels
+   ============================================
+*/
+
+@media only screen and (max-width: 480px) {
+    a#logoleft {
+        display: block;
+    }
+
+    a#logocenter {
+        display: none;
+    }
+	
+	nav.horizontal ul.mainmenu {
+		display: none;
+	}
+
+	a#navicon:hover+ul, nav.horizontal ul.mainmenu:hover {
+        display: block;
+        font-size: .75em;    
+	}
+
+    a#navicon {
+		display: block;
+        float: left;
+	}
+    
+    a#logoleft img {
+        width: 60%;
+    }
+    div#banner img {
+        width: 60%;
+    }
+}
+
+
+/* ===================================================
+	Tablet and Desktop Devices: Greater than 480 pixels
+   ===================================================
+*/
+@media only screen and (min-width: 481px) {
+     
+    nav.horizontal ul.mainmenu {
+        display: -webkit-flex;
+		display: flex;   
+         -webkit-flex-flow: row nowrap;
+		flex-flow: row nowrap;
+        justify-content: space-around;
+        align-items: center;
+        padding: 20px 0px;
+        margin: 0px;
+        }
+
+    a#logocenter img {
+        width: 100%;
+}
+
+    a#navicon {
+        display: none;
+}
+    a#logoleft {
+        display: none;
+}
+}
+
